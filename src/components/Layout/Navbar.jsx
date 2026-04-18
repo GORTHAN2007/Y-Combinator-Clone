@@ -3,15 +3,49 @@ import logo from "../../assets/logo.svg";
 import "../../styles/Navbar.css";
 
 const navLinks = [
-  { label: "About", hasDropdown: true },
-  { label: "Companies", hasDropdown: true },
-  { label: "Library", hasDropdown: false },
+  {
+    label: "About",
+    hasDropdown: true,
+    items: [
+      { label: "What Happens at YC?", href: "#" },
+      { label: "Apply", href: "#" },
+      { label: "YC Interview Guide", href: "#" },
+      { label: "FAQ", href: "#" },
+      { label: "People", href: "#" },
+      { label: "YC Blog", href: "#" },
+      { label: "Contact", href: "#" },
+    ],
+  },
+  {
+    label: "Companies",
+    hasDropdown: true,
+    items: [
+      { label: "Startup Directory", href: "#" },
+      { label: "Founder Directory", href: "#" },
+      { label: "Launch YC", href: "#" },
+    ],
+  },
+  { label: "Library", hasDropdown: false, items: [] },
 ];
 
 const navLinksRight = [
-  { label: "Partners", hasDropdown: false },
-  { label: "Resources", hasDropdown: true },
-  { label: "Startup Jobs", hasDropdown: false },
+  { label: "Partners", hasDropdown: false, items: [] },
+  {
+    label: "Resources",
+    hasDropdown: true,
+    items: [
+      { label: "Startup School", href: "#" },
+      { label: "Newsletter", href: "#" },
+      { label: "Requests for Startups", href: "#" },
+      { label: "For Investors", href: "#" },
+      { label: "Verify Founders", href: "#" },
+      { label: "Hacker News", href: "#" },
+      { label: "Bookface", href: "#" },
+      { label: "Safe", href: "#" },
+      { label: "Find a Co-Founder", href: "#" },
+    ],
+  },
+  { label: "Startup Jobs", hasDropdown: false, items: [] },
 ];
 
 export default function Navbar() {
@@ -20,7 +54,7 @@ export default function Navbar() {
   const handleMouseEnter = (label) => setOpenDropdown(label);
   const handleMouseLeave = () => setOpenDropdown(null);
 
-  const renderLink = ({ label, hasDropdown }) => (
+  const renderLink = ({ label, hasDropdown, items }) => (
     <div
       key={label}
       className={`nav-item ${hasDropdown ? "has-dropdown" : ""}`}
@@ -47,9 +81,11 @@ export default function Navbar() {
       </a>
       {hasDropdown && openDropdown === label && (
         <div className="dropdown-menu">
-          <a href="#" className="dropdown-item">Option 1</a>
-          <a href="#" className="dropdown-item">Option 2</a>
-          <a href="#" className="dropdown-item">Option 3</a>
+          {items.map((item) => (
+            <a key={item.label} href={item.href} className="dropdown-item">
+              {item.label}
+            </a>
+          ))}
         </div>
       )}
     </div>
