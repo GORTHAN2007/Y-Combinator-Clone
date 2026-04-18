@@ -1,0 +1,39 @@
+.hero {
+  height: 100vh;
+  background-color: #f7f6f3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-container {
+  max-width: 900px;
+}
+
+.hero-title {
+  font-size: 64px;
+  font-weight: 100;
+  line-height: 1.2;
+  color: #111;
+}
+
+.hero-title em {
+  font-style: italic;
+  font-family: "Georgia", serif;
+}
+
+.hero-quote {
+  margin-top: 30px;
+  font-size: 16px;
+  color: #555;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-author {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #333;
+}
