@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Source+Serif+4:ital,wght@0,400;1,400&display=swap");
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #fdfdf8;
+}
+
+.navbar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 32px;
+  height: 80px;
+}
+
+.nav-group {
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+.nav-left {
+  justify-content: flex-end;
+  flex: 1;
+}
+
+.nav-right {
+  justify-content: flex-start;
+  flex: 1;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin: 0 16px;
+  text-decoration: none;
+}
+
+.y-logo-img {
+  display: block;
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 8px 14px;
+  font-family: "Outfit", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #16140f;
+  letter-spacing: 0.3px;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: opacity 0.15s ease;
+  border-radius: 0;
+  background: none;
+}
+
+.nav-link:hover {
+  opacity: 0.6;
+}
+
+.chevron {
+  opacity: 1;
+  transition: transform 0.2s ease;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.nav-item:hover .chevron {
+  transform: rotate(180deg);
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: calc(100% + 2px);
+  left: 0;
+  min-width: 210px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 14px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+  padding: 8px;
+  animation: dropdownFadeIn 0.14s ease;
+  z-index: 100;
+}
+
+@keyframes dropdownFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dropdown-item {
+  display: block;
+  padding: 12px 18px;
+  font-family: "Outfit", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #16140f;
+  text-decoration: none;
+  border-radius: 8px;
+  letter-spacing: 0.2px;
+  white-space: nowrap;
+  transition: background-color 0.12s ease;
+}
+
+.dropdown-item:hover {
+  background-color: #f5f0e8;
+  opacity: 1;
+}
+
+.nav-avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1.5px solid #16140f;
+  font-family: "Outfit", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: #16140f;
+  cursor: pointer;
+  margin-left: 16px;
+  transition: opacity 0.15s ease;
+  user-select: none;
+  flex-shrink: 0;
+}
+
+.nav-avatar:hover {
+  opacity: 0.6;
+}
+
+.btn-apply {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  padding: 0 22px;
+  height: 40px;
+  background-color: #000000;
+  color: #ffffff;
+  font-family: "Source Serif 4", serif;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: 0.015rem;
+  text-decoration: none;
+  border-radius: 9999px;
+  white-space: nowrap;
+  transition: opacity 0.15s ease;
+  flex-shrink: 0;
+}
+
+.btn-apply:hover {
+  opacity: 0.8;
+}
