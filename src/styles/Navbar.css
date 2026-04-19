@@ -179,3 +179,38 @@
 .btn-apply:hover {
   opacity: 0.8;
 }
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  margin-right: 12px;
+  cursor: default;
+}
+
+.hamburger span {
+  width: 22px;
+  height: 2px;
+  background-color: #16140f;
+  display: block;
+}
+
+@media (max-width: 1175px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-left,
+  .nav-right {
+    display: none;
+  }
+
+  .navbar-inner {
+    justify-content: flex-start;
+  }
+
+  .navbar-logo {
+    margin-left: 16px;
+  }
+}

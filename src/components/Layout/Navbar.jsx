@@ -94,26 +94,21 @@ export default function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-inner">
-        {/* Left links */}
         <div className="nav-group nav-left">
           {navLinks.map(renderLink)}
         </div>
 
-        {/* Center Y Logo */}
         <a href="/" className="navbar-logo" aria-label="Y Combinator Home">
           <img src={logo} alt="Y Combinator" className="y-logo-img" />
         </a>
 
-        {/* Right links */}
         <div className="nav-group nav-right">
           {navLinksRight.map(renderLink)}
 
-          {/* Avatar */}
           <div className="nav-avatar" title="Account">
             <span>A</span>
           </div>
 
-          {/* Apply button */}
           <a href="#" className="btn-apply">Apply</a>
         </div>
       </div>
