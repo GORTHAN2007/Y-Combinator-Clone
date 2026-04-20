@@ -105,11 +105,13 @@ export default function Navbar() {
         <div className="nav-group nav-right">
           {navLinksRight.map(renderLink)}
 
-          <div className="nav-avatar" title="Account">
-            <span>A</span>
-          </div>
-
+          <a href="#" className="btn-login">Log in</a>
           <a href="#" className="btn-apply">Apply</a>
+        </div>
+        <div className="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
       </div>
     </nav>
