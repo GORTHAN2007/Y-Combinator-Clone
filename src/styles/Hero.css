@@ -8,24 +8,20 @@
   justify-content: center;
   text-align: center;
 }
-
-.hero-container {
+.hero-container{
   max-width: 900px;
 }
-
-.hero-title {
+.hero-title{
   font-family: 'Source Serif 4', serif;
   font-size: 76px;
   font-weight: 350;
   line-height: 1.2;
   color: #111;
 }
-
-.hero-title em {
+.hero-title em{
   font-style: italic;
 }
-
-.hero-quote {
+.hero-quote{
   margin-top: 30px;
   font-size: 18px;
   font-family: 'Courier New', Courier, monospace;
@@ -35,14 +31,13 @@
   margin-left: auto;
   margin-right: auto;
 }
-
-.hero-author {
+.hero-author{
   margin-top: 10px;
   font-size: 14px;
   color: #333;
 }
 
-@media (max-width: 390px) {
+@media (max-width: 390px){
   .hero-title {
     font-size: 30px;
     position: sticky;
@@ -50,7 +45,6 @@
     margin-top: 0;
     z-index: 10;
   }
-
   .hero-quote,
   .hero-author {
     display: none;
