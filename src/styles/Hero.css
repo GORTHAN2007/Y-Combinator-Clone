@@ -15,7 +15,7 @@
 
 .hero-title {
   font-family: 'Source Serif 4', serif;
-  font-size: 76px;
+  font-size: clamp(30px, 6vw, 76px);
   font-weight: 350;
   line-height: 1.2;
   color: #111;
@@ -27,7 +27,9 @@
 
 .hero-quote {
   margin-top: 30px;
-  font-size: 18px;
+  font-size: clamp(2px, 6vw, 18px);
+  font-weight: 350;
+  line-height: 1.2;
   font-family: 'Courier New', Courier, monospace;
   font-style: italic;
   color: #555;
@@ -43,13 +45,13 @@
 }
 
 @media (max-width: 390px) {
-  .hero-title {
+  /* .hero-title {
     font-size: 30px;
     position: sticky;
     top: 0;
     margin-top: 0;
     z-index: 10;
-  }
+  } */
 
   .hero-quote,
   .hero-author {
