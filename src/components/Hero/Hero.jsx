@@ -17,7 +17,6 @@ export default function Hero() {
         </p>
 
         <p className="hero-author">— Paul Graham</p>
-        <p>testing testing....</p>
 
       </div>
     </section>
