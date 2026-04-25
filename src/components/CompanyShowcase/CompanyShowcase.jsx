@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import './CompanyShowcase.css';
+import '../../styles/CompanyShowcase.css';
 
 const companies = [
   {

@@ -1,11 +1,10 @@
 .company-showcase {
   position: relative;
   width: 100%;
-  background-color: #f7f6f3; /* Matches Hero section */
+  background-color: #f7f6f3;
   padding: 50px 0 150px;
 }
-
-.showcase-content {
+.showcase-content{
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -14,9 +13,7 @@
   margin: 0 auto;
   position: relative;
 }
-
-/* Side Columns */
-.side-column {
+.side-column{
   position: sticky;
   top: 15vh;
   width: 380px;
@@ -24,8 +21,7 @@
   flex-direction: column;
   align-items: center;
 }
-
-.column-title {
+.column-title{
   font-family: "Source Serif 4", serif;
   font-style: italic;
   font-size: 1.6rem;
@@ -34,30 +30,24 @@
   font-weight: 400;
   color: #111;
 }
-
-/* Image Stack & Card Configuration */
-.image-stack {
+.image-stack{
   position: relative;
   width: 100%;
   height: 480px;
 }
-
-.image-card {
+.image-card{
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.6s ease-in-out, visibility 0.6s ease-in-out;
 }
-
-.image-card.active {
+.image-card.active{
   opacity: 1;
   visibility: visible;
 }
-
-.image-card img {
+.image-card img{
   width: 100%;
   height: 420px;
   object-fit: cover;
@@ -65,8 +55,7 @@
   box-shadow: 0 10px 30px rgba(0,0,0,0.1);
   background-color: #eee;
 }
-
-.caption {
+.caption{
   margin-top: 15px;
   font-size: 0.9rem;
   text-align: center;
@@ -74,25 +63,21 @@
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   line-height: 1.4;
 }
-
-/* Center Column */
-.center-column {
+.center-column{
   flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 0 40px;
 }
-
-.company-names-list {
+.company-names-list{
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 35vh; /* Pushes the first item down initially */
+  padding-top: 35vh;
   padding-bottom: 30vh;
 }
-
-.company-name-item {
+.company-name-item{
   font-size: 3.5rem;
   font-family: 'Source Serif 4', serif;
   font-weight: 700;
@@ -101,34 +86,28 @@
   transition: color 0.4s ease;
   cursor: default;
 }
-
-.company-name-item.active {
+.company-name-item.active{
   color: #111;
 }
-
-/* bottom stats section */
-.valuation-stat {
+.valuation-stat{
   text-align: center;
   margin-top: 50px;
 }
-
-.valuation-amount {
+.valuation-amount{
   font-size: 4rem;
   font-family: 'Source Serif 4', serif;
   font-weight: 400;
   color: #111;
   margin-bottom: 10px;
 }
-
-.valuation-subtitle {
+.valuation-subtitle{
   font-style: italic;
   font-family: 'Source Serif 4', serif;
   font-size: 1.2rem;
   margin-bottom: 30px;
   color: #555;
 }
-
-.all-companies-link {
+.all-companies-link{
   color: #111;
   text-decoration: none;
   font-size: 1rem;
@@ -137,12 +116,9 @@
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   transition: opacity 0.2s;
 }
-
-.all-companies-link:hover {
+.all-companies-link:hover{
   opacity: 0.7;
 }
-
-/* Responsive constraints */
 @media (max-width: 1100px) {
   .side-column {
     width: 300px;
@@ -151,7 +127,6 @@
     height: 350px;
   }
 }
-
 @media (max-width: 900px) {
   .showcase-content {
     flex-direction: column;
