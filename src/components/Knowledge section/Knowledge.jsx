@@ -16,7 +16,6 @@ function Knowledge() {
     { img: LeftImg2, text: "How To Build The Future: Sam Altman" },
     { img: LeftImg3, text: "YC Partners Answer Your Questions" },
   ];
-
   const galleryImages = [Strip1, Strip2, Strip3, Strip4, Strip5];
 
   return (
@@ -37,7 +36,6 @@ function Knowledge() {
           <div className="center-col">
             <div className="hero-img-wrapper">
               <img src={CenterImg} alt="" />
-              <div className="play-btn">▶</div>
             </div>
 
             <span className="tag">LIGHTCONE PODCAST</span>
@@ -45,9 +43,7 @@ function Knowledge() {
             <h2>Billion-Dollar Unpopular Startup Ideas</h2>
 
             <p className="excerpt">
-              Lightcone is a twice-monthly podcast where YC's Garry Tan,
-              Diana Hu, Harj Taggar, and Jared Friedman talk about the newest
-              tech and how it could change the world.
+              Lightcone is a twice-monthly podcast where YC's Garry Tan, Diana Hu, Harj Taggar, and Jared Friedman talk about the newest tech and how it could change the world. In this episode, they discuss contrarian bets — the ideas that look impossible until they work. From Uber and Coinbase to DoorDash and Flock Safety, they share how founders find opportunity where
             </p>
           </div>
 

@@ -9,7 +9,7 @@ export default function Footer() {
           <div className="footer-brand">
             <a href="/" aria-label="Home">
               <div className="footer-logo">
-                <img src="/logo.svg" alt="Y Combinator" />
+                <img src="src/assets/logo.svg" alt="Y Combinator" />
               </div>
             </a>
             <p className="footer-tagline">Make something people want.</p>
