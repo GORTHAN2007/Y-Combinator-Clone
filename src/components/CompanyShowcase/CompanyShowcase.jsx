@@ -3,52 +3,60 @@ import './CompanyShowcase.css';
 
 const companies = [
   {
-    id: 'reddit',
-    name: 'Reddit',
-    beforeText: 'Steve and Alexis did YC in S05.',
-    afterText: 'Reddit went public in 2024 at a $6.4B valuation.',
-    beforeImage: '/replit_before.png', // Temporary placeholder until image limits allow
-    afterImage: '/replit_after.png',   // Temporary placeholder until image limits allow
+    id: 'openai',
+    name: 'OpenAI',
+    beforeText: "Sam was part of YCs inaugural batch in S05 and founded OpenAl as YC Research in 2015.",
+    afterText: 'Sam built OpenAI into a $500B company.',
+    beforeImage: 'src/assets/JourneySection/OpenAI/before.png', 
+    afterImage: 'src/assets/JourneySection/OpenAI/after.png',
   },
   {
-    id: 'instacart',
-    name: 'Instacart',
-    beforeText: 'Apoorva did YC in S12.',
-    afterText: 'Instacart went public in 2023 at a $9.9B valuation.',
-    beforeImage: '/replit_before.png',
-    afterImage: '/replit_after.png',
+    id: 'airbnb',
+    name: 'Airbnb',
+    beforeText: 'Brian, Joe and Nate did YC in W09.',
+    afterText: 'Airbnb went public in 2020 at an over $100B valuation.',
+    beforeImage: 'src/assets/JourneySection/Airbnb/before.jpg',
+    afterImage: 'src/assets/JourneySection/Airbnb/after.png',
   },
   {
-    id: 'gitlab',
-    name: 'GitLab',
-    beforeText: 'Sid and Dmytro did YC in S14.',
-    afterText: 'GitLab went public in 2021 at an $11B valuation.',
-    beforeImage: '/replit_before.png',
-    afterImage: '/replit_after.png',
+    id: 'stripe',
+    name: 'Stripe',
+    beforeText: 'The Collison brothers did YC twice-first in WO7 and then in S09, wh they started Stripe.',
+    afterText: "Stripe is now the internet's $107B payments backbone.",
+    beforeImage: 'src/assets/JourneySection/Stripe/before.png',
+    afterImage: 'src/assets/JourneySection/Stripe/after.png',
   },
   {
-    id: 'kalshi',
-    name: 'Kalshi',
-    beforeText: 'Tarek and Luana did YC in W19.',
-    afterText: 'Kalshi reached an $11B valuation in 2025.',
-    beforeImage: '/replit_before.png',
-    afterImage: '/replit_after.png',
+    id: 'coinbase',
+    name: 'Coinbase',
+    beforeText: 'Fred and Brian met on Reddit and did YC in S12.',
+    afterText: 'Coinbase went public in 2021 at a $86B valuation.',
+    beforeImage: 'src/assets/JourneySection/CoinBase/before.png',
+    afterImage: 'src/assets/JourneySection/CoinBase/after.png',
   },
   {
-    id: 'replit',
-    name: 'Replit',
-    beforeText: 'Haya and Amjad interviewing for the YC W18 batch.',
-    afterText: 'Replit became a leading AI coding platform valued at over $9B.',
-    beforeImage: '/replit_before.png', // The genuinely generated images
-    afterImage: '/replit_after.png',
+    id: 'doordash',
+    name: 'DoorDash',
+    beforeText: 'Andy, Stanley, Tony, and Evan did YC in S13.',
+    afterText: 'DoorDash went public in 2020 at a valuation of $39B.',
+    beforeImage: 'src/assets/JourneySection/DoorDash/before.png',
+    afterImage: 'src/assets/JourneySection/DoorDash/after.png',
   },
   {
-    id: 'twitch',
-    name: 'Twitch',
-    beforeText: 'Michael, Justin, Kyle, and Emmett in YC W07.',
-    afterText: 'Twitch was acquired by Amazon for nearly $1B.',
-    beforeImage: '/replit_before.png',
-    afterImage: '/replit_after.png',
+    id: 'scaleai',
+    name: 'Scale AI',
+    beforeText: 'Alexandr and Lucy did YC S16 and pivoted during the batch.',
+    afterText: 'In 2025, Meta acquired 49% of Scale for over $14B.',
+    beforeImage: 'src/assets/JourneySection/ScaleAI/scale.png',
+    afterImage: 'src/assets/JourneySection/ScaleAI/after.png',
+  },
+  {
+    id: 'dropbox',
+    name: 'DropBox',
+    beforeText: 'Arash and Drew started Dropbox at MIT and did YC in S07.',
+    afterText: 'Dropbox had the biggest tech IPO of 2018 at a $9B valuation.',
+    beforeImage: 'src/assets/JourneySection/DropBox/before.png',
+    afterImage: 'src/assets/JourneySection/DropBox/after.png',
   }
 ];
 
@@ -81,7 +89,7 @@ export default function CompanyShowcase() {
     };
 
     window.addEventListener('scroll', handleScroll);
-    handleScroll(); // Initial check
+    handleScroll();
     
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
