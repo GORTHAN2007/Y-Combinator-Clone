@@ -17,9 +17,7 @@ function Knowledge() {
     { img: LeftImg3, text: "YC Partners Answer Your Questions" },
   ];
 
-  const galleryImages = [
-    "src/assets/knowledge&NewSection/Strip1.jpg", "src/assets/knowledge&NewSection/Strip2.jpg", "src/assets/knowledge&NewSection/Strip3.jpg", "src/assets/knowledge&NewSection/Strip4.jpg", "src/assets/knowledge&NewSection/Strip5.jpg", 
-  ];
+  const galleryImages = [Strip1, Strip2, Strip3, Strip4, Strip5];
 
   return (
     <>
