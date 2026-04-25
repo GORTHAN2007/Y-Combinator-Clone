@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,200..900;1,200..900&display=swap');
 
-.hero {
+.hero{
   height: 100vh;
   background-color: #f5f5ee;
   display: flex;
@@ -39,8 +39,8 @@
   color: #333;
 }
 
-@media (max-width: 390px) {
-  .hero-title {
+@media (max-width: 390px){
+  .hero-title{
     font-size: 30px;
     position: sticky;
     top: 0;
@@ -49,7 +49,7 @@
   }
 
   .hero-quote,
-  .hero-author {
+  .hero-author{
     display: none;
   }
 }

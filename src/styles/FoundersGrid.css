@@ -1,9 +1,8 @@
-.founders-section {
+.founders-section{
     padding: 4rem 1.5rem;
     background-color: #f5f5ee;
 }
-
-.founders-heading {
+.founders-heading{
     text-align: center;
     font-family: 'Source Serif 4', serif;
     font-style: italic;
@@ -12,22 +11,19 @@
     color: #000;
     margin-bottom: 3rem;
 }
-
-.founders-grid {
+.founders-grid{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
 }
-
-.founder-card {
+.founder-card{
     position: relative;
     border-radius: 12px;
     overflow: hidden;
     cursor: pointer;
     aspect-ratio: 1.45 / 1;
 }
-
-.founder-img {
+.founder-img{
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -35,13 +31,11 @@
     filter: grayscale(100%);
     transition: filter 0.4s ease, transform 0.4s ease;
 }
-
-.founder-card:hover .founder-img {
+.founder-card:hover .founder-img{
     filter: grayscale(0%);
     transform: scale(1.03);
 }
-
-.founder-overlay {
+.founder-overlay{
     position: absolute;
     bottom: 0;
     left: 0;
@@ -57,12 +51,10 @@
     transition: opacity 0.4s ease;
     pointer-events: none;
 }
-
-.founder-card:hover .founder-overlay {
+.founder-card:hover .founder-overlay{
     opacity: 1;
 }
-
-.founder-name {
+.founder-name{
     font-family: 'Outfit', sans-serif;
     font-size: 1.8rem;
     font-weight: 600;
@@ -70,8 +62,7 @@
     margin: 0;
     line-height: 1.2;
 }
-
-.founder-company {
+.founder-company{
     font-family: 'Outfit', sans-serif;
     font-size: 1.2rem;
     font-weight: 400;
@@ -79,18 +70,16 @@
     margin: 0.5rem 0 0 0;
     opacity: 0.9;
 }
-
-@media (max-width: 900px) {
-    .founders-grid {
+@media (max-width: 900px){
+    .founders-grid{
         grid-template-columns: repeat(2, 1fr);
     }
 }
-
-@media (max-width: 600px) {
-    .founders-grid {
+@media (max-width: 600px){
+    .founders-grid{
         grid-template-columns: 1fr;
     }
-    .founders-heading {
+    .founders-heading{
         font-size: 2.2rem;
     }
 }
