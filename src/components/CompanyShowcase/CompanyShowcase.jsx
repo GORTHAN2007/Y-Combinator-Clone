@@ -66,7 +66,7 @@ export default function CompanyShowcase() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const items = document.querySelectorAll('.company-name-item');
+      const items = document.querySelectorAll('.company-name-item, .valuation-stat');
       if (items.length === 0) return;
       
       let closestIndex = 0;
@@ -99,7 +99,7 @@ export default function CompanyShowcase() {
       <div className="showcase-content">
         
         <div className="side-column before-column">
-          <h3 className="column-title">During YC</h3>
+          <h3 className={`column-title ${activeIndex === companies.length ? 'hidden' : ''}`}>During YC</h3>
           <div className="image-stack">
             {companies.map((company, index) => (
               <div 
@@ -111,6 +111,12 @@ export default function CompanyShowcase() {
                 <p className="caption">{company.beforeText}</p>
               </div>
             ))}
+            <div 
+              className={`image-card ${companies.length === activeIndex ? 'active' : ''}`}
+              style={{ zIndex: companies.length === activeIndex ? 10 : 1 }}
+            >
+              <img src="src/assets/JourneySection/CompanyList/left.png" alt="YC companies grid left" style={{ objectFit: 'contain', backgroundColor: 'transparent', boxShadow: 'none' }} />
+            </div>
           </div>
         </div>
 
@@ -134,7 +140,7 @@ export default function CompanyShowcase() {
         </div>
 
         <div className="side-column after-column">
-          <h3 className="column-title">Now</h3>
+          <h3 className={`column-title ${activeIndex === companies.length ? 'hidden' : ''}`}>Now</h3>
           <div className="image-stack">
             {companies.map((company, index) => (
               <div 
@@ -146,6 +152,12 @@ export default function CompanyShowcase() {
                 <p className="caption">{company.afterText}</p>
               </div>
             ))}
+            <div 
+              className={`image-card ${companies.length === activeIndex ? 'active' : ''}`}
+              style={{ zIndex: companies.length === activeIndex ? 10 : 1 }}
+            >
+              <img src="src/assets/JourneySection/CompanyList/right.png" alt="YC companies grid right" style={{ objectFit: 'contain', backgroundColor: 'transparent', boxShadow: 'none' }} />
+            </div>
           </div>
         </div>
         
