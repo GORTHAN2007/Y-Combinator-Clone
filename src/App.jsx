@@ -2,8 +2,9 @@ import Hero from './components/Hero/Hero.jsx'
 import Footer from './components/Layout/Footer.jsx'
 import Navbar from './components/Layout/Navbar.jsx'
 import CompanyShowcase from './components/CompanyShowcase/CompanyShowcase.jsx'
-import './styles/App.css';
+import History from './components/History/History.jsx'
 import Knowledge from './components/Knowledge section/Knowledge.jsx';
+import './styles/App.css';
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <Navbar/>
       <Hero/>
       <CompanyShowcase/>
+      <History/>
       <Knowledge/>
       <Footer/>
     </>
