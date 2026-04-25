@@ -18,6 +18,9 @@ function App() {
       <Hero/>
       <CompanyShowcase/>
       <History/>
+      <FoundersComments/>
+      <FoundersGrid/>
+      <PartnersGrid/>
       <Knowledge/>
       <Footer/>
     </>
