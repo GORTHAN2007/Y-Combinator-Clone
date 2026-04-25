@@ -1,9 +1,9 @@
-import '../styles/FoundersGrid.css';
+import '../../styles/Partners.css';
 
-function FoundersGrid() {
+function PartnersGrid() {
     return(
-        <div>FoundersGrid</div>
+        <div>PartnersGrid</div>
     )
 }
 
-export default FoundersGrid;
+export default PartnersGrid;
