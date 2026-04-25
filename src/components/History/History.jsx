@@ -2,7 +2,8 @@ import "../../styles/History.css";
 
 function History() {
   return (
-    <section className="history-wrapper">
+    <div className="history-section">
+    <div className="history-wrapper">
       <div className="history-content">
         <p>
           In 2005, Y Combinator developed a new model of startup funding.
@@ -19,7 +20,8 @@ function History() {
           beyond.
         </p>
       </div>
-    </section>
+    </div>
+    </div>
   );
 }
 

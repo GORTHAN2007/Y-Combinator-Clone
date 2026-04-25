@@ -1,8 +1,11 @@
+.history-section{
+    background-color: #f5f5ee;
+}
 .history-wrapper {
   max-width: 680px;
   margin: 140px auto 120px auto;
   padding: 0 24px;
-  background-color: #f7f6f2;
+  background-color: #f5f5ee;
 }
 
 .history-content p {
