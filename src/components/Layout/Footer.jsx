@@ -1,5 +1,6 @@
 import React from "react";
 import "../../styles/Footer.css"
+import logo from "../../assets/logo.svg"
 
 export default function Footer() {
   return (
@@ -9,7 +10,7 @@ export default function Footer() {
           <div className="footer-brand">
             <a href="/" aria-label="Home">
               <div className="footer-logo">
-                <img src="src/assets/logo.svg" alt="Y Combinator" />
+                <img src={logo} alt="Y Combinator" />
               </div>
             </a>
             <p className="footer-tagline">Make something people want.</p>

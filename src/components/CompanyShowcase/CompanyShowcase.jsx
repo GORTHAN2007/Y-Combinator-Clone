@@ -1,62 +1,79 @@
 import React, { useState, useEffect, useRef } from 'react';
 import '../../styles/CompanyShowcase.css';
 
+import openaiBefore from '../../assets/JourneySection/OpenAI/before.png';
+import openaiAfter from '../../assets/JourneySection/OpenAI/after.png';
+import airbnbBefore from '../../assets/JourneySection/Airbnb/before.jpg';
+import airbnbAfter from '../../assets/JourneySection/Airbnb/after.png';
+import stripeBefore from '../../assets/JourneySection/Stripe/before.png';
+import stripeAfter from '../../assets/JourneySection/Stripe/after.png';
+import coinbaseBefore from '../../assets/JourneySection/CoinBase/before.png';
+import coinbaseAfter from '../../assets/JourneySection/CoinBase/after.png';
+import doordashBefore from '../../assets/JourneySection/DoorDash/before.png';
+import doordashAfter from '../../assets/JourneySection/DoorDash/after.png';
+import scaleaiBefore from '../../assets/JourneySection/ScaleAI/scale.png';
+import scaleaiAfter from '../../assets/JourneySection/ScaleAI/after.png';
+import dropboxBefore from '../../assets/JourneySection/DropBox/before.png';
+import dropboxAfter from '../../assets/JourneySection/DropBox/after.png';
+import leftGrid from '../../assets/JourneySection/CompanyList/left.png';
+import rightGrid from '../../assets/JourneySection/CompanyList/right.png';
+
 const companies = [
   {
     id: 'openai',
     name: 'OpenAI',
     beforeText: "Sam was part of YCs inaugural batch in S05 and founded OpenAl as YC Research in 2015.",
     afterText: 'Sam built OpenAI into a $500B company.',
-    beforeImage: 'src/assets/JourneySection/OpenAI/before.png', 
-    afterImage: 'src/assets/JourneySection/OpenAI/after.png',
+    beforeImage: openaiBefore, 
+    afterImage: openaiAfter,
   },
   {
     id: 'airbnb',
     name: 'Airbnb',
     beforeText: 'Brian, Joe and Nate did YC in W09.',
     afterText: 'Airbnb went public in 2020 at an over $100B valuation.',
-    beforeImage: 'src/assets/JourneySection/Airbnb/before.jpg',
-    afterImage: 'src/assets/JourneySection/Airbnb/after.png',
+    beforeImage: airbnbBefore,
+    afterImage: airbnbAfter,
   },
   {
     id: 'stripe',
     name: 'Stripe',
     beforeText: 'The Collison brothers did YC twice-first in WO7 and then in S09, wh they started Stripe.',
     afterText: "Stripe is now the internet's $107B payments backbone.",
-    beforeImage: 'src/assets/JourneySection/Stripe/before.png',
-    afterImage: 'src/assets/JourneySection/Stripe/after.png',
+    beforeImage: stripeBefore,
+    afterImage: stripeAfter,
   },
   {
     id: 'coinbase',
     name: 'Coinbase',
     beforeText: 'Fred and Brian met on Reddit and did YC in S12.',
     afterText: 'Coinbase went public in 2021 at a $86B valuation.',
-    beforeImage: 'src/assets/JourneySection/CoinBase/before.png',
-    afterImage: 'src/assets/JourneySection/CoinBase/after.png',
+    beforeImage: coinbaseBefore,
+    afterImage: coinbaseAfter,
   },
   {
     id: 'doordash',
     name: 'DoorDash',
     beforeText: 'Andy, Stanley, Tony, and Evan did YC in S13.',
     afterText: 'DoorDash went public in 2020 at a valuation of $39B.',
-    beforeImage: 'src/assets/JourneySection/DoorDash/before.png',
-    afterImage: 'src/assets/JourneySection/DoorDash/after.png',
+    beforeImage: doordashBefore,
+    afterImage: doordashAfter,
   },
   {
     id: 'scaleai',
     name: 'Scale AI',
     beforeText: 'Alexandr and Lucy did YC S16 and pivoted during the batch.',
     afterText: 'In 2025, Meta acquired 49% of Scale for over $14B.',
-    beforeImage: 'src/assets/JourneySection/ScaleAI/scale.png',
-    afterImage: 'src/assets/JourneySection/ScaleAI/after.png',
+    beforeImage: scaleaiBefore,
+    afterImage: scaleaiAfter,
   },
   {
     id: 'dropbox',
     name: 'DropBox',
     beforeText: 'Arash and Drew started Dropbox at MIT and did YC in S07.',
     afterText: 'Dropbox had the biggest tech IPO of 2018 at a $9B valuation.',
-    beforeImage: 'src/assets/JourneySection/DropBox/before.png',
-    afterImage: 'src/assets/JourneySection/DropBox/after.png',
+    beforeImage: dropboxBefore,
+    afterImage: dropboxAfter,
   }
 ];
 
@@ -115,7 +132,7 @@ export default function CompanyShowcase() {
               className={`image-card ${companies.length === activeIndex ? 'active' : ''}`}
               style={{ zIndex: companies.length === activeIndex ? 10 : 1 }}
             >
-              <img src="src/assets/JourneySection/CompanyList/left.png" alt="YC companies grid left" style={{ objectFit: 'contain', backgroundColor: 'transparent', boxShadow: 'none' }} />
+              <img src={leftGrid} alt="YC companies grid left" style={{ objectFit: 'contain', backgroundColor: 'transparent', boxShadow: 'none' }} />
             </div>
           </div>
         </div>
@@ -156,7 +173,7 @@ export default function CompanyShowcase() {
               className={`image-card ${companies.length === activeIndex ? 'active' : ''}`}
               style={{ zIndex: companies.length === activeIndex ? 10 : 1 }}
             >
-              <img src="src/assets/JourneySection/CompanyList/right.png" alt="YC companies grid right" style={{ objectFit: 'contain', backgroundColor: 'transparent', boxShadow: 'none' }} />
+              <img src={rightGrid} alt="YC companies grid right" style={{ objectFit: 'contain', backgroundColor: 'transparent', boxShadow: 'none' }} />
             </div>
           </div>
         </div>
